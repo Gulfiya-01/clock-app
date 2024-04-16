@@ -1,0 +1,113 @@
+.good-afternoon,
+.good-morning,
+.good-evening {
+  position: relative;
+}
+
+.good-afternoon::before,
+.good-morning::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/mobile/bg-image-daytime.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.8) contrast(1.2);
+  z-index: -1;
+}
+
+.good-evening::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.8) contrast(1.2);
+  z-index: -1;
+  background-image: url('./assets/mobile/bg-image-nighttime.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.app-container {
+  padding: 32px 26px 0 26px;
+}
+
+.detail-wrapper {
+  margin-top: 40px;
+  padding-top: 48px;
+}
+
+.good-evening .detail-wrapper {
+  padding: 32px 26px 0 26px;
+  margin: 40px -26px 0 -26px;
+  backdrop-filter: blur(2.55rem);
+  background: hsla(0, 0%, 1%, 0.75);
+}
+
+.good-afternoon .detail-wrapper,
+.good-morning .detail-wrapper {
+  padding: 32px 26px 0 26px;
+  margin: 40px -26px 0 -26px;
+  backdrop-filter: blur(40.77px);
+  background: rgba(255, 255, 255, 0.75);
+  position: relative; 
+  z-index: 1; 
+  color: hsla(0, 0%, 1%, 0.75);;
+}
+
+.btn-more {
+  margin-top: 48px;
+  width: 7.19rem;
+  height: 2.44rem;
+  border-radius: 1.75rem;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 0.88rem;
+  letter-spacing: 0.23rem;
+  text-transform: uppercase;
+  border: none;
+}
+@media only screen and (min-width: 1024px){
+  .app-container {
+  padding: 56px 100px 150px 100px;
+}
+.btn-more {
+  margin-top: -3.5rem;
+  float: right;
+  width: 146px;
+  height: 56px;
+  border-radius: 28px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing:5px;
+}
+
+.good-evening .detail-wrapper {
+  padding: 72px 46px 140px 100px;
+  margin: 125px -100px -190px -100px;
+  backdrop-filter: blur(2.55rem);
+  background: hsla(0, 0%, 1%, 0.75);
+}
+
+.good-afternoon .detail-wrapper,
+.good-morning .detail-wrapper {
+  padding: 72px 46px 140px 100px;
+  margin: 125px -100px -190px -100px;
+  backdrop-filter: blur(40.77px);
+  background: rgba(255, 255, 255, 0.75);
+  position: relative; 
+  z-index: 1; 
+  color: hsla(0, 0%, 1%, 0.75);;
+}
+
+}

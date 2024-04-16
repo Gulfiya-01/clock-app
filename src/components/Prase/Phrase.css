@@ -1,0 +1,44 @@
+.phrase {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.content {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.author {
+  padding-top: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.btn-refresh {
+  border: none;
+  padding: 0;
+  background: none;
+}
+@media only screen and (min-width: 1024px){
+.phrase {
+  justify-content:flex-start;
+}
+.content {
+  font-size: 18px;
+  line-height: 28px;
+}
+.author {
+  font-size: 18px;
+  line-height: 28px;
+  padding-top: 13px;
+}
+.btn-refresh {
+  margin-top: 4px;
+}
+}
